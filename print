@@ -1,0 +1,5 @@
+rnn = RNN()
+print(rnn)
+
+optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)   # optimize all cnn parameters
+loss_func = nn.CrossEntropyLoss()                       # the target label is not one-hotted
