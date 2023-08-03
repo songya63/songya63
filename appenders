@@ -1,0 +1,7 @@
+
+        <!--ALL < TRACE < DEBUG < INFO < WARN < ERROR < FATAL < OFF-->
+        <root level="ERROR">
+            <appender-ref ref="spring6log"/>
+        </root>
+    </loggers>
+    <appenders>
