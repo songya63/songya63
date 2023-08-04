@@ -1,0 +1,17 @@
+
+#include <iostream>
+ 
+typedef struct ListNode
+{
+	int val;
+	struct ListNode* next;
+}LTNode;
+ 
+void LTPushBack_C(LTNode** pphead, int x)
+{
+	/
+}
+ 
+void LTPushBack_CPP(LTNode*& phead, int x)
+{
+	//
