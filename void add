@@ -1,0 +1,7 @@
+  public void add(Object element) {
+        if (size == capacity) {
+            increaseCapacity(); // 
+        }
+        array[size] = element;
+        size++;
+    }
