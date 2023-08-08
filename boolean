@@ -1,0 +1,12 @@
+protected String doGetFieldName(int fieldContant, String role)  
+			throws UserProfileResourceException { 
+ 
+		System.out.println("SampleUserManagerImpl.doGetFieldName - This operation is not implemented !");  
+		return null; 
+	} 
+ 
+	protected boolean doIsActive(String userId) throws UserProfileResourceException { 
+ 
+		System.out.println("SampleUserManagerImpl.doIsActive - This operation is not implemented !");  
+		return false; 
+	} 
