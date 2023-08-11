@@ -1,0 +1,14 @@
+ ExMessage msg;
+        if (peekmessage(&msg)) {
+            if (msg.message == WM_LBUTTONDOWN &&
+                msg.x > 474 && msg.x < 474 + 300 && msg.y > 75 && msg.y < 75 + 140) {
+                flag = 1;
+                EndBatchDraw();
+            }
+            else if (msg.message == WM_LBUTTONUP && flag) {
+                return;
+            }
+        }
+        EndBatchDraw();
+    }
+}
