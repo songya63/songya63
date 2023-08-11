@@ -1,0 +1,19 @@
+ char scoreText[8];
+    sprintf_s(scoreText, sizeof(scoreText), "%d", sunshine);
+    outtextxy(282 - 10 + 4, 50 + 15 + 2, scoreText);
+    EndBatchDraw();
+}
+ 
+void userClick() {
+    ExMessage msg;
+    static int status = 0;
+    if (peekmessage(&msg)) {
+        if (msg.message == WM_LBUTTONDOWN) {
+            if (msg.x > 338 && msg.x < 338 + 64 * ZHI_WU_COUT && msg.y>6 && msg.y < 96) {
+                int index = (msg.x - 338) / 64;
+                printf("%d\n", index);
+                status = 1;
+                curZhiWu = index + 1; // 1， 2 
+                curX = msg.x;
+                curY = msg.y;
+            }
