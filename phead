@@ -1,0 +1,10 @@
+void SLprint(SLNode* phead)
+{
+	SLNode* cur = phead;
+	while (cur)
+	{
+		printf("%d->", cur->data);
+		cur = cur->next;
+	}
+	printf("NULL\n");
+}
