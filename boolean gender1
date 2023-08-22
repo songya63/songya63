@@ -1,0 +1,21 @@
+public final class Person {
+   private boolean gender;
+
+   public Person() {
+      this.gender = true;
+      String var1 = "Person init 2,gender:" + this.gender;
+      boolean var2 = false;
+      System.out.println(var1);
+      var1 = "Person init 1";
+      var2 = false;
+      System.out.println(var1);
+   }
+
+   public Person(@NotNull String name, boolean gender) {
+      Intrinsics.checkParameterIsNotNull(name, "name");
+      this();
+      String var3 = "constructor";
+      boolean var4 = false;
+      System.out.println(var3);
+   }
+}
